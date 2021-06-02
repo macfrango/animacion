@@ -13,14 +13,14 @@ GamePlayManager = {
     create: function() {
         game.add.sprite(0, 0, 'background');
         this.samurai = game.add.sprite(0, 500, 'samurai');
-        this.samurai.animations.add('walk', [0,1,2,3,4,5,6,7,8,9,0,],15,true);
+        this.samurai.animations.add('walk', [0,1,2,3,4,5,6,7,8,9,0,],20,true);
         this.samurai.animations.play("walk");
 
 
     },
     update: function() {
         console.log("update");
-        this.samurai.x += 10;
+        this.samurai.x += 8;
         
     }
 }
